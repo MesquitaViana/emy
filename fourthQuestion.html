@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="question-container">
+        <!-- Background Image -->
+        <div class="background-image"></div>
+
+        <!-- Pergunta e alternativas -->
+        <div class="question-content">
+            <p>Essa não tera dicas, você precisara descobrir na sua cabeça</p>
+            <h2 class="question-title">Qual e o apelido mais importante para mim?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span>Macaquinha (porque foi um dos primeiros e um dos principais)</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span>Pretinha (foi um dos ultimos que eu te chamei, mas ele tem o seu q de especial)</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span>Meu Nenem (esse e muito importante, mas isso eu te explico agora)</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="4">
+                    <span>Amor (por mais que ele seja bem simples, ele e importante pois você me ensinou oque era amor)</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="5">
+                    <span>Meny (gosto muito desse pois veio de uma das pessoas mais importantes para o relacionamento)</span>
+                </label>
+            </div>
+            <button id="nextButton" onclick="showVoucherPopup()" class="btn-primary" style="display: none;">Próxima</button>
+        </div>
+
+        <!-- Pop-up de Dica -->
+        <div id="hintPopup" class="popup">
+            <div class="popup-content">
+                <span id="hintText">Dica sobre a pergunta</span>
+                <button onclick="closeHintPopup()" class="btn-primary">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Pop-up de Vale -->
+        <div id="voucherPopup" class="popup">
+            <div class="voucher-content">
+                <h2 class="voucher-title">SEGUNDO PRESENTE</h2>
+                <p class="voucher-description">Esse para mim e um dos presentes mais importantes, pois ele foi algo que apareceu sem eu estar procurando e na hora veio você na minha cabeça, Porque assim como Van Gogh tinha o brilho das estrelas para a sua inspiração, eu tenho o Brilho da Lua que me ilumina todos os dias, sempre que vejo a Lua vem você no meu pensamento</p>
+                <button onclick="goToNextPage()" class="btn-primary">Ir para a próxima pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/fourthQuestion.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="question-container">
+        <!-- Background Image -->
+        <div class="background-image"></div>
+
+        <!-- Pergunta e alternativas -->
+        <div class="question-content">
+            <p>Essa e uma pergunta quase que sem resposta</p>
+            <h2 class="question-title">Oque eu mais amo em você?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span>Meu tetezinho</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span>Meu pepeto</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span>Seu olha, seu sorriso, seus olhos, seu cabelo, suas pintinhas, seu jeitinho, seu beijo seu abraço.</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="4">
+                    <span>Meu corpo (que infelizmente fica com você)</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="5">
+                    <span>sua forma de lidar com problema</span>
+                </label>
+            </div>
+            <button id="nextButton" onclick="showVoucherPopup()" class="btn-primary" style="display: none;">Próxima</button>
+        </div>
+
+        <!-- Pop-up de Dica -->
+        <div id="hintPopup" class="popup">
+            <div class="popup-content">
+                <span id="hintText">Dica sobre a pergunta</span>
+                <button onclick="closeHintPopup()" class="btn-primary">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Pop-up de Vale -->
+        <div id="voucherPopup" class="popup">
+            <div class="voucher-content">
+                <h2 class="voucher-title">Fim</h2>
+                <p class="voucher-description">Va para a proxima pagina</p>
+                <button onclick="goToNextPage()" class="btn-primary">Ir para a próxima pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/tenthQuestion.js"></script>
+</body>
+</html>

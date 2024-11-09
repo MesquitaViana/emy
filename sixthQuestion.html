@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="question-container">
+        <!-- Background Image -->
+        <div class="background-image"></div>
+
+        <!-- Pergunta e alternativas -->
+        <div class="question-content">
+            <p>Esse você tera que ir em um feeling muito bom</p>
+            <h2 class="question-title">Qual foi o presente com maior significado que você ja me deu?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span>Camiseta do Corinthians</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span>Minha Macaquinha</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span>A pulseira rosa feita a mão</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="4">
+                    <span>As cartinhas</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="5">
+                    <span>O quadro com a nossa foto</span>
+                </label>
+            </div>
+            <button id="nextButton" onclick="showVoucherPopup()" class="btn-primary" style="display: none;">Próxima</button>
+        </div>
+
+        <!-- Pop-up de Dica -->
+        <div id="hintPopup" class="popup">
+            <div class="popup-content">
+                <span id="hintText">Dica sobre a pergunta</span>
+                <button onclick="closeHintPopup()" class="btn-primary">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Pop-up de Vale -->
+        <div id="voucherPopup" class="popup">
+            <div class="voucher-content">
+                <h2 class="voucher-title">TERCEIRO PRESENTE</h2>
+                <p class="voucher-description">Esse presente ele mais uma vez e algo que você republicou, e eu sei que você gosta desse filme/desenho tambem, então resolvi procurar e achei mo</p>
+                <button onclick="goToNextPage()" class="btn-primary">Ir para a próxima pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/sixthQuestion.js"></script>
+</body>
+</html>

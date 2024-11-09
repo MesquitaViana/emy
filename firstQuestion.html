@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="question-container">
+        <!-- Background Image -->
+        <div class="background-image"></div>
+
+        <!-- Pergunta e alternativas -->
+        <div class="question-content">
+            <p>Essa é tranquila mor</p>
+            <h2 class="question-title">Quando foi o nosso primeiro beijo?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span>26/08/2022</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span>19/08/2022</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span>01/10/2022</span>
+                </label>
+            </div>
+            <button id="nextButton" onclick="showVoucherPopup()" class="btn-primary" style="display: none;">Próxima</button>
+        </div>
+
+        <!-- Pop-up de Dica -->
+        <div id="hintPopup" class="popup">
+            <div class="popup-content">
+                <span id="hintText">Dica sobre a pergunta</span>
+                <button onclick="closeHintPopup()" class="btn-primary">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Pop-up de Vale -->
+        <div id="voucherPopup" class="popup">
+            <div class="voucher-content">
+                <h2 class="voucher-title">VALE</h2>
+                <p class="voucher-description">Como sei que você me pede muito, te darei essa carta na manga, agora você tem um vale massagem que pode ser usado sem moderação</p>
+                <button onclick="goToNextPage()" class="btn-primary">Ir para a próxima pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/question.js"></script>
+</body>
+</html>

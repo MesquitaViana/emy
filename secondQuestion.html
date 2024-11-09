@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="question-container">
+        <!-- Background Image -->
+        <div class="background-image"></div>
+
+        <!-- Pergunta e alternativas -->
+        <div class="question-content">
+            <p>Se você errar a questão, receberá apenas uma dica.</p>
+            <h2 class="question-title">Qual das músicas abaixo eu considero a do nosso namoro?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span>Amor e Fé - Hungria</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span>Sorte - Diego e Victor Hugo</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span>Moça do Espelho - Zé Neto e Cristiano</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="4">
+                    <span>Que Sorte a Nossa - Matheus e Kauan</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="5">
+                    <span>Those Eyes - New West</span>
+                </label>
+            </div>
+            <button id="nextButton" onclick="showVoucherPopup()" class="btn-primary" style="display: none;">Próxima</button>
+        </div>
+
+        <!-- Pop-up de Dica -->
+        <div id="hintPopup" class="popup">
+            <div class="popup-content">
+                <span id="hintText">Dica sobre a pergunta</span>
+                <button onclick="closeHintPopup()" class="btn-primary">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Pop-up de Vale -->
+        <div id="voucherPopup" class="popup">
+            <div class="voucher-content">
+                <h2 class="voucher-title">PRIMEIRO PRESENTE</h2>
+                <p class="voucher-description">Esse primeiro presente e algo que você republicou, e olhando oque iria te dar de presente eu me lembrei disso. Espero que goste!</p>
+                <button onclick="goToNextPage()" class="btn-primary">Ir para a próxima pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/secondQuestion.js"></script>
+</body>
+</html>

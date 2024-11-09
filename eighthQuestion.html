@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="question-container">
+        <!-- Background Image -->
+        <div class="background-image"></div>
+
+        <!-- Pergunta e alternativas -->
+        <div class="question-content">
+            <p>Agora que ja foi a parte fofinha liberou o cabare😁</p>
+            <h2 class="question-title">Qual foi o dia em que fizemos amorzinho a primeira vez?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span>07/10/2022</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span>12/10/2022</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span>10/10/2022</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="4">
+                    <span>08/10/2022</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="5">
+                    <span>09/10/2022</span>
+                </label>
+            </div>
+            <button id="nextButton" onclick="showVoucherPopup()" class="btn-primary" style="display: none;">Próxima</button>
+        </div>
+
+        <!-- Pop-up de Dica -->
+        <div id="hintPopup" class="popup">
+            <div class="popup-content">
+                <span id="hintText">Dica sobre a pergunta</span>
+                <button onclick="closeHintPopup()" class="btn-primary">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Pop-up de Vale -->
+        <div id="voucherPopup" class="popup">
+            <div class="voucher-content">
+                <h2 class="voucher-title">QUARTO PRESENTE</h2>
+                <p class="voucher-description">Esse presente e algo que sempre comentei sobre comprar, porem nunca tinhamos comprado, e agora temos a oportunidade de usar (capetinha roxo)</p>
+                <button onclick="goToNextPage()" class="btn-primary">Ir para a próxima pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/eighthQuestion.js"></script>
+</body>
+</html>
